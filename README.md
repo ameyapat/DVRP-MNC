@@ -12,7 +12,7 @@ TO RUN: gcc dvrp.c -o dvrp
                 ./dvrp
 
 The program first reads the topology file and saves information in a struct known as topo topl_file.
-It saves no. of servers, no. of edges, server ids, ip addresses and port nos.
+It saves no. of servers (1st line of topology file), no. of edges (2nd line), [server ids, ip addresses and port nos].
 The program gets it's own id and neighbour ids and costs to them  from the topology file.
 From its own id it Find own IP address and Port-no. from topology file and initialize a socket.
 
